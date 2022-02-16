@@ -12,7 +12,7 @@ Run, mspaint.exe,,, Paint
 sleep 1000
 send #{Up}
 sleep 1000
-run chrome.exe "https://app.slack.com/client/T1DRRAYBZ/DCF52N4KD"
+run chrome.exe "https://app.slack.com/client/T1DRRAYBZ/D02T62D872R"				;replace this one link to the slack url of who you want to summon
 sleep 6000
 send ^v
 sleep 1000
