@@ -42,6 +42,10 @@ while True:
         if cv2.arcLength(contour, True) > 1.3 * 2 * math.pi * int(math.sqrt(cv2.contourArea(contour)/math.pi)):
             continue
         approx = cv2.approxPolyDP(contour, 0.01 * cv2.arcLength(contour, True), True)
+        if (len(approx) > 8):
+            print(len(approx))
+            continue 
+            
         cv2.drawContours(frame, [contour], 0, (0, 255, 0), 5)
         bx, by, bw, bh = cv2.boundingRect(contour)
         cv2.rectangle(frame, (bx, by), (bx+bw,by+bh), (0, 0, 255), 2)
