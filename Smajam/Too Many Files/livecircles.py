@@ -7,7 +7,6 @@ cap.set(cv.CAP_PROP_FRAME_HEIGHT, 720)
 while True:
     _, img = cap.read()
     #img = frame.copy()
-    img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     img = cv.medianBlur(img,5)
     cimg = cv.cvtColor(img,cv.COLOR_GRAY2BGR)
     circles = cv.HoughCircles(img,cv.HOUGH_GRADIENT,1,20,

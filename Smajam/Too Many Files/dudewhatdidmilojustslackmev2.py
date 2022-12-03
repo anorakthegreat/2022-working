@@ -2,7 +2,6 @@ from xml.etree.ElementTree import PI
 import numpy as np
 import cv2
 import math
-
 cap = cv2.VideoCapture(1)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
